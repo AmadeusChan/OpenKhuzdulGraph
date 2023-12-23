@@ -13,6 +13,7 @@ Note:
 - Using a MPI implementations except for OpenMPI might leads to a performance issue. we strongly recommend using OpenMPI.
 - This engine relies on InfiniBand networks. It might not work well on other types of network like Ethernet.
 - The code base is configured be used to analyze small- and median-scale graphs (e.g., graphs <= 10B edges). If you plan to evaluate the performance on massive-scale graphs (with > 10B edges), please reach out to us and we can provide another code base that is configured slightly differently for massive graphs (those evaluated in our papers).
+- Since we haven't extensively tested our engine on vairous software/hardware environments, if you find any performance/correctness-related compatility issue, please feel free to reach out to us.
 
 Compile the engine:
 ```bash
