@@ -1,0 +1,16 @@
+# toolkits
+function (add_toolkit toolkit_name)
+	add_executable(${toolkit_name} ${toolkit_name}.cc)
+	target_link_libraries(${toolkit_name} ${dependencies})
+endfunction()
+
+add_toolkit(converter)
+add_toolkit(degree_analysis)
+add_toolkit(check_graph)
+add_toolkit(export_graph)
+add_toolkit(to_arabesque_dataset_converter)
+add_toolkit(locality_aware_reordering)
+add_toolkit(to_shuffled_biedgelist_converter)
+add_toolkit(to_biedgelist_converter)
+add_toolkit(analyze_trace)
+add_toolkit(to_oriented_dataset_converter)
