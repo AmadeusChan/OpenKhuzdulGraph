@@ -68,7 +68,7 @@ mpirun -n 4 -N 1 -host <a list of your machine names> <application path (e.g., .
 ## Citation
 
 If you use Khuzdul for your research, please cite our paper:
-```
+```bibtex
 @inproceedings{chen2023khuzdul,
   title={Khuzdul: Efficient and Scalable Distributed Graph Pattern Mining Engine},
   author={Chen, Jingji and Qian, Xuehai},
