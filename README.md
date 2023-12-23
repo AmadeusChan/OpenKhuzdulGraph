@@ -64,3 +64,19 @@ We use mpirun to launch the tasks.
 % using 4 machines
 mpirun -n 4 -N 1 -host <a list of your machine names> <application path (e.g., ./build/distributed_applications/kautomine/triangle)> <dataset in the *.dgraph format>
 ```
+
+## Citation
+
+If you use Khuzdul for your research, please cite our paper:
+```
+@inproceedings{chen2023khuzdul,
+  title={Khuzdul: Efficient and Scalable Distributed Graph Pattern Mining Engine},
+  author={Chen, Jingji and Qian, Xuehai},
+  booktitle={Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+  pages={413--426},
+  year={2023}
+}
+```
+
+
+
