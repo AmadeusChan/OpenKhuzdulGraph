@@ -122,6 +122,7 @@ int main(int argc, char ** argv) {
 			total_write_bytes += write_bytes;
 		}
 		assert(close(f) == 0);
+        printf("Done exporting the binary edge list data\n");
 
 		{
 			ofstream fout("./data/live_journal.edgelist");
@@ -130,6 +131,7 @@ int main(int argc, char ** argv) {
 				fout << edge_list[e_i].src << " " << edge_list[e_i].dst << endl;
 			}
 			fout.close();
+            printf("Done exporting the edge list data\n");
 		}
 
 		{
@@ -139,6 +141,7 @@ int main(int argc, char ** argv) {
 				fout << edge_list[e_i].dst << " " << edge_list[e_i].src << endl;
 			}
 			fout.close();
+            printf("Done exporting the rs_edgelist data\n");
 		}
 
 		{
@@ -175,6 +178,7 @@ int main(int argc, char ** argv) {
 				fout << endl;
 			}
 			fout.close();
+            printf("Done exporting the rs_adjlist data\n");
 			delete [] csr_list_vtx;
 			delete [] csr_idx;
 			delete [] curr_pos;
