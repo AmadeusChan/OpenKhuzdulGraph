@@ -50,7 +50,7 @@ cd ../../build/toolkits/
 
 ## Configure the Machine-Specific Parameters
 
-One need to configure some machine-specific micros firstly before running the experiments.
+One need to configure some machine-specific macros firstly before running the experiments.
 
 - ./include/engine.h: MAX_MEMORY_SIZE: the maximum memory size the engine can use on a single machine;
 - ./include/engine.h: L1_DCACHE_SIZE: the L1 d-cache size of your CPU;
